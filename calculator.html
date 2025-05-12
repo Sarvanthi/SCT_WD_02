@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css">
+        <script src="calculator.js" defer></script>
+    </head>
+    <body>
+        <h1>Simple Calculator</h1>
+        <input type="text" id="display" disabled>
+        <table>
+            <tr>
+                <th><button onclick="append('+')">+</button></th>
+                <th><button onclick="append('-')">-</button></th>
+                <th><button onclick="append('*')">*</button></th>
+                <th><button onclick="append('/')">/</button></th>
+            </tr>
+            <tr>
+                <td><button onclick="append('9')">9</button></td>
+                <td><button onclick="append('8')">8</button></td>
+                <td><button onclick="append('7')">7</button></td>
+                <th><button onclick="sqrt()">√</button></th>
+            </tr>
+            <tr>
+                <td><button onclick="append('6')">6</button></td>
+                <td><button onclick="append('5')">5</button></td>
+                <td><button onclick="append('4')">4</button></td>
+                <th><button onclick="square()">x²</button></th>
+            </tr>
+            <tr>
+                <td><button onclick="append('3')">3</button></td>
+                <td><button onclick="append('2')">2</button></td>
+                <td><button onclick="append('1')">1</button></td>
+                <th><button onclick="cube()">x³</button></th>
+            </tr>
+            <tr>
+                <th><button onclick="append('%')">%</button></th>
+                <td><button onclick="append('0')">0</button></th>
+                <th><button onclick="append('.')">.</button></th>
+                <th><button onclick="calculate()">    =      </button></th>
+            </tr>
+            <tr>
+                <th><button onclick="clearAll()">AC</button></th>
+                <th><button onclick="clearLast()">C</button></th>
+            </tr>
+        </table>
+    </body>
+</html>
